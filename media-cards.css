@@ -1,0 +1,46 @@
+/* Card indicators */
+.cardIndicators{
+    top: 0 !important;
+    right: 0 !important;
+}
+
+.playedIndicator {
+    background: #5dd000;
+    border-radius: 0 0 0 5px !important;
+}
+
+.countIndicator {
+    background: rgba(142, 42, 245,0.8) !important;
+    border-radius: 0 0 0 5px !important;
+}
+
+.cardScalable:hover{
+    box-shadow: 0 0px 0px 3px var(--skullflix-purple) !important;
+}
+
+[aria-label="Animations"]::after,
+[aria-label="Anime"]::after,
+[aria-label="Collections"]::after,
+[aria-label="Movies"]::after,
+[aria-label="Shows"]::after {
+        content: attr(aria-label); /* Dynamically insert the aria-label text */
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2.5rem; /* Larger text */
+        font-weight: bold;
+        padding: 15px 30px;
+        border-radius: 5px;
+        white-space: nowrap;
+        text-shadow: 4px 7px 8px rgba(0, 0, 0, 1); /* Drop shadow */
+}
+
+.card {
+    --effectiveWidth: calc((99vw - (var(--sidePadding) * 2)));
+    --cardBuffer: clamp(40px, 5vw, 70px); /* Scales between 40px-80px */
+    --cardWidth: calc(var(--effectiveWidth) / var(--cardCount) - var(--itemColumnGap) + var(--cardBuffer)) !important;
+    width: var(--cardWidth) !important;
+}

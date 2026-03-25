@@ -1,0 +1,55 @@
+/* Progress portion of the seek bar */
+.mdl-slider-background-lower {
+    background-color: var(--skullflix-purple) !important;
+}
+
+/* Slider thumb (circle you drag) */
+.mdl-slider::-webkit-slider-thumb {
+    background: var(--skullflix-purple) !important;
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+}
+
+.mdl-slider::-moz-range-thumb {
+    background: var(--skullflix-purple) !important;
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 50% !important;
+    border: none !important;
+    cursor: pointer !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Player control icons */
+.mediaControls .btnAction {
+    color: var(--skullflix-purple) !important;
+}
+
+/* Media controls */
+.osdControls {
+    background-color: rgb(11 1 22 / 60%) !important;
+    backdrop-filter: blur(10px) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.skinHeader-withBackground.osdHeader{
+    background: linear-gradient(90deg, rgb(46 0 93) 0%, rgba(20, 20, 20, 0.5) 80%) !important;
+    height: auto !important;
+}
+
+.videoOsdBottom {
+    /* padding-bottom: max(env(safe-area-inset-bottom), 1.0em) !important; */
+    padding-bottom: 0 !important;
+}
+
+.upNextContainer.upNextDialog {
+    background: rgb(28 10 49 / 60%) !important;
+    border-radius: 20px !important;    
+    backdrop-filter: blur(10px) !important;
+}

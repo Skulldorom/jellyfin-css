@@ -1,0 +1,61 @@
+/* Editors choice plugin */
+
+:root {
+    --editors-choice-height: 85vh;
+}
+
+.editorsChoiceItemBanner{
+    height: var(--editors-choice-height) !important;
+}
+
+.homeSectionsContainer.editorsChoiceAdded .editorsChoiceContainer{
+    height: var(--editors-choice-height) !important;
+    margin-bottom: 3.8em !important;
+}
+
+.editorsChoiceHeroMode .editorsChoiceItemBanner .editorsChoiceBackdrop{
+    background-position: top !important;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0.9) 85%, rgba(0, 0, 0, 0.4) 95%, rgba(0, 0, 0, 0) 100%);
+}
+
+.editorsChoiceContent{
+    justify-content: space-evenly !important;
+}
+
+.editorsChoiceItemButton{
+    background: white !important;
+    color: var(--skullflix-purple) !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+}
+
+.editorsChoiceItemButton::before{
+    content: "▶ " !important;
+    margin-right: 5px !important;
+}
+
+.editorsChoiceItemButton{
+    background: white !important;
+    color: black !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: var(--largeRadius) !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.editorsChoiceItemButton::before{
+    content: "▶ " !important;
+    margin-right: 5px !important;
+}
+
+.editorsChoiceItemButton:hover{
+    background: #f0f0f0 !important;
+    box-shadow: 0 0px 10px 15px var(--skullflix-purple) !important;
+}
+
+/* Editors choice plugin END */
