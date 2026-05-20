@@ -3,7 +3,7 @@
     rgba(13, 2, 25, 0.8) 30%,
     55%,
     transparent 90%
-  )!important}:root{--skullflix-purple:rgba(95, 17, 175, 1);--borderColor:rgb(183 113 255 / 30%)!important;--btnMiniPlayColor:var(--skullflix-purple)!important;--btnMiniPlayBorderColor:var(--skullflix-purple)!important;--backgroundGradient:linear-gradient(
+  )!important}:root{--pause-screen-overlay-bg:rgba(0, 0, 0, 0)!important}#pause-screen-backdrop{opacity:0!important}#pause-screen-overlay{background:"rgba(0, 0, 0, 0)"!important}#pause-screen-content{backdrop-filter:blur(3px)!important}:root{--skullflix-purple:rgba(95, 17, 175, 1);--borderColor:rgb(183 113 255 / 30%)!important;--btnMiniPlayColor:var(--skullflix-purple)!important;--btnMiniPlayBorderColor:var(--skullflix-purple)!important;--backgroundGradient:linear-gradient(
     180deg,
     var(--skullflix-purple) 0%,
     var(--skullflix-purple) 15%,
