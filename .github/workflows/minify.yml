@@ -26,10 +26,15 @@ jobs:
       - name: Minify main.css (inline imports)
         run: cleancss --inline all -o main.min.css main.css
 
-      - name: Commit minified CSS
+      - name: Verify minified output
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add main.min.css
-          git diff --cached --quiet || git commit -m "chore: update minified CSS [skip ci]"
-          git push
+          if [ ! -s main.min.css ]; then
+            echo "Error: main.min.css is missing or empty after minification."
+            exit 1
+          fi
+
+      - name: Commit minified CSS
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update minified CSS [skip ci]"
+          file_pattern: main.min.css
