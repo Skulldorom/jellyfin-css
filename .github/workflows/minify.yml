@@ -1,0 +1,40 @@
+name: Minify CSS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  minify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install clean-css-cli
+        run: npm install -g clean-css-cli
+
+      - name: Minify main.css (inline imports)
+        run: cleancss --inline all -o main.min.css main.css
+
+      - name: Verify minified output
+        run: |
+          if [ ! -s main.min.css ]; then
+            echo "Error: main.min.css is missing or empty after minification."
+            exit 1
+          fi
+
+      - name: Commit minified CSS
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update minified CSS [skip ci]"
+          file_pattern: main.min.css
