@@ -1,0 +1,15 @@
+:root {
+  --pause-screen-overlay-bg: rgba(0, 0, 0, 0) !important;
+}
+
+#pause-screen-backdrop {
+  opacity: 0 !important;
+}
+
+#pause-screen-overlay {
+  background: "rgba(0, 0, 0, 0)" !important;
+}
+
+#pause-screen-content {
+  backdrop-filter: blur(3px) !important;
+}
