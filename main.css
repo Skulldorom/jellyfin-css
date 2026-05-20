@@ -2,6 +2,7 @@
 @import url("editors-choice-plugin.css");
 @import url("video-player.css");
 @import url("elegantfin.css");
+@import url("pausescreen.css");
 
 :root {
   --skullflix-purple: rgba(95, 17, 175, 1);
