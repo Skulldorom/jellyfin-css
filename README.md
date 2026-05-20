@@ -9,7 +9,7 @@ A custom CSS theme for [Jellyfin](https://jellyfin.org/) featuring a purple aest
 Paste the following URL into **Dashboard → General → Custom CSS**:
 
 ```
-https://cdn.jsdelivr.net/gh/Skulldorom/jellyfin-css@main/main.min.css
+@import url("https://cdn.jsdelivr.net/gh/Skulldorom/jellyfin-css@main/main.min.css")
 ```
 
 > **Note:** jsDelivr caches files for a short period. If you don't see your changes immediately, append a version tag to the URL (e.g. `@v1.0.0`) or wait for the cache to expire.
