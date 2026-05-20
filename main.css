@@ -1,51 +1,52 @@
-@import url('media-cards.css');
-@import url('editors-choice-plugin.css');
-@import url('video-player.css');
+@import url("media-cards.css");
+@import url("editors-choice-plugin.css");
+@import url("video-player.css");
+@import url("elegantfin.css");
 
 :root {
-    --sf-red: 95;
-    --sf-green: 17;
-    --sf-blue: 175;
-    --skullflix-purple: rgba(var(--sf-red), var(--sf-green), var(--sf-blue), 1);
-    --borderColor: rgb(183 113 255 / 30%) !important;
-    --backgroundGradient: linear-gradient(180deg,var(--skullflix-purple) 0%,var(--skullflix-purple) 15%, rgba(0, 0, 0, 1) 100%) !important;
-    --background-image : url(https://cdn.skulldorom.xyz/images/backgrounds/background.svg) !important;
+  --skullflix-purple: rgba(95, 17, 175, 1);
+  --borderColor: rgb(183 113 255 / 30%) !important;
+  --btnMiniPlayColor: var(--skullflix-purple) !important;
+  --btnMiniPlayBorderColor: var(--skullflix-purple) !important;
+  --backgroundGradient: linear-gradient(
+    180deg,
+    var(--skullflix-purple) 0%,
+    var(--skullflix-purple) 15%,
+    rgba(0, 0, 0, 1) 100%
+  ) !important;
+  --background-image: url(https://cdn.skulldorom.xyz/images/backgrounds/background.svg) !important;
 }
 
 .imgLogoIcon {
-	content: url(https://cdn.skulldorom.xyz/images/logos/skullflix/logo_simple_curve.svg) !important;
-        height:40px  !important;
+  content: url(https://cdn.skulldorom.xyz/images/logos/skullflix/logo_simple_curve.svg) !important;
+  height: 40px !important;
 }
 
 .pageTitleWithLogo {
-	background-image: url(https://cdn.skulldorom.xyz/images/logos/skullflix/logo_simple_curve.svg) !important;
-        height:40px !important;
+  background-image: url(https://cdn.skulldorom.xyz/images/logos/skullflix/logo_simple_curve.svg) !important;
+  height: 40px !important;
 }
-
 
 .card-hoverable:hover .cardScalable,
 .card-hoverable:hover .visualCardBox {
-    border-color: var(--skullflix-purple) !important;
-}
-
-/* Hover color */
-.paper-icon-button-light:hover {
-    color: var(--skullflix-purple) !important;
+  border-color: var(--skullflix-purple) !important;
 }
 
 /* Buttons */
-.skip-button.emby-button,.upNextDialog-button.emby-button{
-    background: rgba(72, 9, 134, 0.8) !important;
-    color: white !important;
-    border: none !important;
-    padding: 10px 20px !important;
-    border-radius: 5px !important;
-    font-size: 1rem !important;
-    cursor: pointer !important;
+.skip-button.emby-button,
+.upNextDialog-button.emby-button {
+  background: white !important;
+  color: black !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  border-radius: var(--largeRadius) !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
 }
 
 .skip-button.emby-button:hover,
-.upNextDialog-button.emby-button:hover{
-    background: rgb(60, 7, 112) !important;
-    color: white !important;
+.upNextDialog-button.emby-button:hover {
+  background: #f0f0f0 !important;
+  box-shadow: 0 0px 10px 15px var(--skullflix-purple) !important;
 }

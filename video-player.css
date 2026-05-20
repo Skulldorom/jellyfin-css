@@ -44,7 +44,6 @@
 }
 
 .videoOsdBottom {
-    /* padding-bottom: max(env(safe-area-inset-bottom), 1.0em) !important; */
     padding-bottom: 0 !important;
 }
 

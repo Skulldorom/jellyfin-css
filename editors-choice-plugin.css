@@ -2,6 +2,8 @@
 
 :root {
     --editors-choice-height: 85vh;
+    --darkerBorderColor: hsla(251, 74%, 22%, 0.2);
+    /* --darkerBorderColor: hsl(252deg 79.71% 14.62%); */
 }
 
 .editorsChoiceItemBanner{
@@ -56,6 +58,15 @@
 .editorsChoiceItemButton:hover{
     background: #f0f0f0 !important;
     box-shadow: 0 0px 10px 15px var(--skullflix-purple) !important;
+}
+
+
+.editorsChoiceItemOverview{
+    text-shadow:
+        -1px -1px 0 black,
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black !important;
 }
 
 /* Editors choice plugin END */

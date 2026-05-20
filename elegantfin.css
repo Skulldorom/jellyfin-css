@@ -1,0 +1,12 @@
+/* Additions to ElegantFin */
+:root {
+  --drawerColor: rgba(13, 2, 25, 0.8) !important;
+  --darkerGradientPoint: #000000 !important;
+  --darkerGradientPointAlpha: #0c0027 !important;
+  --headerBackground: linear-gradient(
+    180deg,
+    rgba(13, 2, 25, 0.8) 30%,
+    55%,
+    transparent 90%
+  ) !important;
+}
