@@ -11,5 +11,5 @@
 }
 
 #pause-screen-content {
-  backdrop-filter: blur(3px) !important;
+  backdrop-filter: brightness(0.5) !important;
 }
