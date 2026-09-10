@@ -5,7 +5,25 @@
 @import url("pausescreen.css");
 
 :root {
-  --skullflix-purple: rgba(95, 17, 175, 1);
+  --skullflix-purple: rgb(95 17 175);
+
+  /* Jellyfin 12 theme tokens */
+  --jf-palette-primary-main: var(--skullflix-purple);
+  --jf-palette-primary-dark: rgb(69 10 130);
+  --jf-palette-primary-light: rgb(183 113 255);
+  --jf-palette-primary-hover: rgb(116 34 198);
+  --jf-palette-secondary-main: var(--skullflix-purple);
+  --jf-palette-background-defaultImage: url("https://cdn.skulldorom.xyz/images/backgrounds/background.svg");
+  --jf-palette-AppBar-defaultBg: rgb(13 2 25 / 80%);
+  --jf-palette-AppBar-transparentBg: rgb(13 2 25 / 60%);
+  --jf-palette-AppBar-gradient: linear-gradient(
+    180deg,
+    rgb(13 2 25 / 80%) 30%,
+    transparent 90%
+  );
+  --jf-card-borderRadius: 0.5em;
+
+  /* Legacy and plugin compatibility */
   --borderColor: rgb(183 113 255 / 30%) !important;
   --btnMiniPlayColor: var(--skullflix-purple) !important;
   --btnMiniPlayBorderColor: var(--skullflix-purple) !important;
@@ -13,25 +31,23 @@
     180deg,
     var(--skullflix-purple) 0%,
     var(--skullflix-purple) 15%,
-    rgba(0, 0, 0, 1) 100%
+    rgb(0 0 0) 100%
   ) !important;
-  --background-image: url(https://cdn.skulldorom.xyz/images/backgrounds/background.svg) !important;
+  --background-image: url("https://cdn.skulldorom.xyz/images/backgrounds/background.svg") !important;
 }
 
 /* Jellyfin 12 - replace top-left branding with Skullflix logo */
-a[href="#/"].MuiButton-root {
+a[href="#/"][class*="MuiButton-root"] {
   font-size: 0 !important;
+  width: 150px !important;
   min-width: 150px !important;
   height: 40px !important;
-
-  background-image: url(https://cdn.skulldorom.xyz/images/logos/skullflix/logo_simple_curve.svg) !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  background-position: left center !important;
+  padding: 0 !important;
+  background: url("https://cdn.skulldorom.xyz/images/logos/skullflix/logo_simple_curve.svg") left center / contain no-repeat !important;
 }
 
 /* Hide Jellyfin's original icon */
-a[href="#/"].MuiButton-root .MuiButton-startIcon {
+a[href="#/"][class*="MuiButton-root"] .MuiButton-startIcon {
   display: none !important;
 }
 
@@ -56,5 +72,5 @@ a[href="#/"].MuiButton-root .MuiButton-startIcon {
 .skip-button.emby-button:hover,
 .upNextDialog-button.emby-button:hover {
   background: #f0f0f0 !important;
-  box-shadow: 0 0px 10px 15px var(--skullflix-purple) !important;
+  box-shadow: 0 0 10px 15px var(--skullflix-purple) !important;
 }
