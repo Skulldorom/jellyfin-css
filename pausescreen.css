@@ -1,5 +1,5 @@
 :root {
-  --pause-screen-overlay-bg: rgba(0, 0, 0, 0) !important;
+  --pause-screen-overlay-bg: rgb(0 0 0 / 0%) !important;
 }
 
 #pause-screen-backdrop {
@@ -7,7 +7,7 @@
 }
 
 #pause-screen-overlay {
-  background: "rgba(0, 0, 0, 0)" !important;
+  background: transparent !important;
 }
 
 #pause-screen-content {
