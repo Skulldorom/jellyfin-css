@@ -18,14 +18,21 @@
   --background-image: url(https://cdn.skulldorom.xyz/images/backgrounds/background.svg) !important;
 }
 
-.imgLogoIcon {
-  content: url(https://cdn.skulldorom.xyz/images/logos/skullflix/logo_simple_curve.svg) !important;
+/* Jellyfin 12 - replace top-left branding with Skullflix logo */
+a[href="#/"].MuiButton-root {
+  font-size: 0 !important;
+  min-width: 150px !important;
   height: 40px !important;
+
+  background-image: url(https://cdn.skulldorom.xyz/images/logos/skullflix/logo_simple_curve.svg) !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
 }
 
-.pageTitleWithLogo {
-  background-image: url(https://cdn.skulldorom.xyz/images/logos/skullflix/logo_simple_curve.svg) !important;
-  height: 40px !important;
+/* Hide Jellyfin's original icon */
+a[href="#/"].MuiButton-root .MuiButton-startIcon {
+  display: none !important;
 }
 
 .card-hoverable:hover .cardScalable,
