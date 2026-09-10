@@ -1,18 +1,26 @@
-# Jellyfin CSS – purple theme that extends [Elegantfin](https://github.com/lscambo13/ElegantFin)
+# Jellyfin CSS – Skullflix purple theme
 
-A custom CSS theme for [Jellyfin](https://jellyfin.org/) featuring a purple aesthetic.
+A custom CSS theme for Jellyfin featuring a purple aesthetic. The current theme supports Jellyfin 12 while retaining legacy variables used by ElegantFin and optional plugins.
 
 ## Usage
 
 ### Minified
 
-Paste the following URL into **Dashboard → General → Custom CSS**:
+Paste the following into **Dashboard → General → Custom CSS**:
 
-```
-@import url("https://cdn.jsdelivr.net/gh/Skulldorom/jellyfin-css@main/main.min.css")
+```css
+@import url("https://cdn.jsdelivr.net/gh/Skulldorom/jellyfin-css@main/main.min.css");
 ```
 
-> **Note:** jsDelivr caches files for a short period. If you don't see your changes immediately, append a version tag to the URL (e.g. `@v1.0.0`) or wait for the cache to expire.
+> **Note:** jsDelivr caches files for a short period. For predictable production updates, use a tagged release such as `@v2.0.0` instead of `@main`.
+
+## Compatibility
+
+- Jellyfin 12: supported, including the React/MUI header and `--jf-*` theme tokens.
+- Legacy Jellyfin/plugin markup: retained where practical through compatibility variables and selectors.
+- Editors Choice and Pause Screen rules only apply when their respective plugins inject the expected markup.
+
+Do not target generated MUI classes such as `.css-iqm7ky`; those class names may change between Jellyfin builds.
 
 ## How it works
 
@@ -20,7 +28,8 @@ Paste the following URL into **Dashboard → General → Custom CSS**:
 
 | File | Description |
 |---|---|
-| `media-cards.css` | Styles for media cards |
-| `editors-choice-plugin.css` | Editors' Choice plugin styles |
-| `video-player.css` | Video player overrides |
-| `elegantfin.css` | Base elegantfin theme styles |
+| `media-cards.css` | Media cards and collection-folder styling |
+| `editors-choice-plugin.css` | Optional Editors Choice plugin styling |
+| `video-player.css` | Legacy and current video-player overrides |
+| `elegantfin.css` | Legacy ElegantFin-compatible layout variables |
+| `pausescreen.css` | Optional Pause Screen plugin styling |
