@@ -94,3 +94,7 @@ a[href="#/"].MuiButton-root:has(.MuiButton-startIcon img) .MuiButton-startIcon {
   background: #f0f0f0 !important;
   box-shadow: 0 0 10px 15px var(--skullflix-purple) !important;
 }
+
+.verticalSection:not(:empty) {
+  margin-top: 2em !important;
+}
