@@ -3,10 +3,18 @@
   --drawerColor: rgba(13, 2, 25, 0.8) !important;
   --darkerGradientPoint: #0c0027 !important;
   --darkerGradientPointAlpha: #0c0027 !important;
+  --btnSubmitColor: #4f1a8d !important;
   --headerBackground: linear-gradient(
     180deg,
     rgba(13, 2, 25, 0.8) 30%,
     55%,
     transparent 90%
   ) !important;
+}
+
+.MuiButton-colorPrimary,
+.button-submit,
+.upNextContainer .btnStartNow {
+  border: none !important;
+  border-radius: 20px !important;
 }
