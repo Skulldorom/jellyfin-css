@@ -64,8 +64,3 @@
 .videoOsd-appBar {
   height: 80px !important;
 }
-
-/* Hide header when in fullscreen mode */
-body:has(.videoOsd-appBar) .MuiAppBar-root {
-  display: none !important;
-}

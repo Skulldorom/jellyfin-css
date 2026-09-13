@@ -1,3 +1,4 @@
+@import url("header.css");
 @import url("media-cards.css");
 @import url("jellyfin-featured.css");
 @import url("video-player.css");
@@ -54,70 +55,6 @@ a[href="#/"].MuiButton-root:has(.MuiButton-startIcon img) {
 
 a[href="#/"].MuiButton-root:has(.MuiButton-startIcon img) .MuiButton-startIcon {
   display: none !important;
-}
-
-/* Top header */
-.MuiAppBar-root {
-  border-bottom: none !important;
-  box-shadow: none !important;
-  padding: 15px 0 !important;
-  margin-bottom: 20px !important;
-
-  /* Required for the animated background layers */
-  position: fixed !important;
-  isolation: isolate;
-
-  /* Remove MUI's own background */
-  background: transparent !important;
-}
-
-/* Background layers */
-.MuiAppBar-root::before,
-.MuiAppBar-root::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-
-  transition: opacity 0.6s ease-in-out !important;
-}
-
-/* Purple gradient */
-.MuiAppBar-root::before {
-  background: linear-gradient(
-    180deg,
-    rgb(13 2 25 / 85%) 0%,
-    rgb(13 2 25 / 75%) 35%,
-    rgb(13 2 25 / 40%) 65%,
-    transparent 100%
-  );
-
-  opacity: 0;
-}
-
-/* Solid black */
-.MuiAppBar-root::after {
-  background: black;
-  opacity: 0;
-}
-
-/* At top of page */
-.MuiAppBar-root.MuiAppBar-colorTransparent::before {
-  opacity: 1;
-}
-
-.MuiAppBar-root.MuiAppBar-colorTransparent::after {
-  opacity: 0;
-}
-
-/* Scrolled down */
-.MuiAppBar-root.MuiAppBar-colorDefault::before {
-  opacity: 0;
-}
-
-.MuiAppBar-root.MuiAppBar-colorDefault::after {
-  opacity: 1;
 }
 
 .card-hoverable:hover .cardScalable,
