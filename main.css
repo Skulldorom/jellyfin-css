@@ -57,6 +57,11 @@ a[href="#/"].MuiButton-root:has(.MuiButton-startIcon img) .MuiButton-startIcon {
   display: none !important;
 }
 
+/* Header icon stack center */
+.MuiToolbar-root .MuiStack-root {
+  align-items: center !important;
+}
+
 .card-hoverable:hover .cardScalable,
 .card-hoverable:hover .visualCardBox {
   border-color: var(--skullflix-purple) !important;
