@@ -18,7 +18,7 @@ Paste the following into **Dashboard → General → Custom CSS**:
 
 - Jellyfin 12: supported, including the React/MUI header and `--jf-*` theme tokens.
 - Legacy Jellyfin/plugin markup: retained where practical through compatibility variables and selectors.
-- Editors Choice and Pause Screen rules only apply when their respective plugins inject the expected markup.
+- Jellyfin Featured and Pause Screen rules only apply when their respective plugins inject the expected markup.
 
 Do not target generated MUI classes such as `.css-iqm7ky`; those class names may change between Jellyfin builds.
 
@@ -29,7 +29,8 @@ Do not target generated MUI classes such as `.css-iqm7ky`; those class names may
 | File | Description |
 |---|---|
 | `media-cards.css` | Media cards and collection-folder styling |
-| `editors-choice-plugin.css` | Optional Editors Choice plugin styling |
+| `jellyfin-featured.css` | Optional Jellyfin Featured styling |
 | `video-player.css` | Legacy and current video-player overrides |
 | `elegantfin.css` | Legacy ElegantFin-compatible layout variables |
 | `pausescreen.css` | Optional Pause Screen plugin styling |
+

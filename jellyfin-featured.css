@@ -1,0 +1,10 @@
+/* Jellyfin Featured */
+
+.ec-viewport {
+  border-radius: 24px !important;
+}
+
+.ec-content {
+  justify-content: flex-end !important;
+}
+/* Jellyfin Featured END */
