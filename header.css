@@ -1,0 +1,16 @@
+/* Episode details page — always black */
+body:has(.detailPagePrimaryContainer .episodeName) .MuiAppBar-root,
+body:has(.detailPagePrimaryContainer .episodeName)
+  .MuiAppBar-root.MuiAppBar-colorTransparent,
+body:has(.detailPagePrimaryContainer .episodeName)
+  .MuiAppBar-root.MuiAppBar-colorDefault {
+  background: black !important;
+}
+
+body:has(.detailPagePrimaryContainer .episodeName) .MuiAppBar-root::before {
+  opacity: 0 !important;
+}
+
+body:has(.detailPagePrimaryContainer .episodeName) .MuiAppBar-root::after {
+  opacity: 1 !important;
+}
