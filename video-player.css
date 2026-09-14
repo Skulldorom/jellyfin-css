@@ -32,7 +32,7 @@
 
 /* Media controls */
 .osdControls {
-  background-color: rgb(11 1 22 / 60%) !important;
+  background-color: #0b011650 !important;
   backdrop-filter: blur(10px) !important;
   margin: 0 !important;
   padding: 0 !important;
