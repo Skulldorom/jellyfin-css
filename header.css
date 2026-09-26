@@ -46,7 +46,7 @@
 
 /* At top of page */
 .MuiAppBar-root.MuiAppBar-colorTransparent::before {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .MuiAppBar-root.MuiAppBar-colorTransparent::after {
@@ -59,7 +59,7 @@
 }
 
 .MuiAppBar-root.MuiAppBar-colorDefault::after {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 /* Episode details page — force solid black header */
